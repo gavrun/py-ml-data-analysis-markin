@@ -43,19 +43,32 @@ customers.csv: customer profile data (age, gender, registration date, premium st
 1. Clone repository:
 
 ```
-git clone <URL>
+git clone https://github.com/USERNAME/REPO_NAME.git
 cd project 
 ```
 
-2. Install dependencies:
+2. Create and activate a virtual environment:
 
 ```
-pip install pandas matplotlib numpy jupyter
+python -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.venv\Scripts\Activate
 ```
 
-3. Launch the notebook:
+3. Install dependencies:
 
 ```
-jupyter notebook notebooks/analysis.ipynb
+pip install -r requirements.txt
 ```
 
+4. Register a Jupyter kernel:
+
+```
+python -m ipykernel install --user --name=K_NAME --display-name "Python (K_NAME)"
+```
+
+5. Launch the notebook:
+
+```
+jupyter notebook notebooks/B_NAME.ipynb
+```
